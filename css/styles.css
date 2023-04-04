@@ -13,14 +13,15 @@
     |============================
   */
   /* Text colors */
-  --main-txt-cl: #2e2f42;
+  --body-txt-cl: #434455;
+  --title-txt-cl: #2e2f42;
   --light-txt-cl: #ffffff;
   --accent-txt-cl: #404bbf;
   --logo-txt-cl: #4d5ae5;
-  --desc-txt-cl: #434455;
   /* Bg colors */
   --light-bg: #f4f4fd;
   --dark-bg: #2e2f42;
+  --bg: #ffffff;
   /* Button */
   --bnt-bg: #4d5ae5;
   --accent-bnt-bg: #404bbf;
@@ -37,7 +38,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--main-txt-cl);
+  color: var(--body-txt-cl);
+  background-color: var(--bg);
 }
 
 /**
@@ -67,6 +69,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--title-txt-cl);
 }
 
 .header-logo,
@@ -93,15 +96,18 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-txt-cl);
+  color: var(--title-txt-cl);
 }
 .header-contacts {
-  color: var(--main-txt-cl);
+  text-transform: lowercase;
+  text-decoration: none;
+  font-style: normal;
+  color: currentColor;
 }
 .header-nav-item:hover,
 .header-nav-item:focus,
-.header-nav-item:hover,
-.header-nav-item:focus {
+.header-contacts:hover,
+.header-contacts:focus {
   color: var(--accent-txt-cl);
 }
 
@@ -113,7 +119,7 @@ body {
 
 /* Hero section */
 .hero-section {
-  background-color: var(--main-txt-cl);
+  background-color: var(--dark-bg);
 }
 .hero-title {
   font-weight: 700;
@@ -124,7 +130,10 @@ body {
   color: var(--light-txt-cl);
 }
 .hero-btn {
+  font-family: inherit;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
   align-items: center;
   letter-spacing: 0.04em;
   color: var(--light-txt-cl);
@@ -133,7 +142,9 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
-.hero-btn:hover {
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--light-txt-cl);
   background-color: var(--accent-bnt-bg);
 }
 
@@ -143,14 +154,15 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-}
-.features-desc {
-  color: var(--desc-txt-cl);
+  color: var(--title-txt-cl);
 }
 
 /* Team section */
 .team-section {
   background-color: var(--light-bg);
+}
+.team-list-item {
+  background-color: var(--bg);
 }
 .team-prs {
   font-weight: 500;
@@ -158,11 +170,11 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
+  color: var(--title-txt-cl);
 }
 .team-prs-info {
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--desc-txt-cl);
 }
 
 /**
