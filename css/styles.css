@@ -252,3 +252,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-txt-cl);
 }
+.portfolio-cards-category {
+  color: currentColor;
+}
