@@ -104,11 +104,18 @@ body {
   font-style: normal;
   color: currentColor;
 }
+.header-nav-item {
+  font-weight: 500;
+  color: var(--title-txt-cl);
+}
 .header-nav-item:hover,
 .header-nav-item:focus,
 .header-contacts:hover,
 .header-contacts:focus {
   color: var(--accent-txt-cl);
+}
+.header-address {
+  font-style: normal;
 }
 
 /**
