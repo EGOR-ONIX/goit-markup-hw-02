@@ -1,0 +1,189 @@
+:root {
+  /**
+  |============================
+  | FONTS
+  |============================
+  */
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+
+  /**
+    |============================
+    | COLORS
+    |============================
+  */
+  /* Text colors */
+  --main-txt-cl: #2e2f42;
+  --light-txt-cl: #ffffff;
+  --accent-txt-cl: #404bbf;
+  --logo-txt-cl: #4d5ae5;
+  --desc-txt-cl: #434455;
+  /* Bg colors */
+  --light-bg: #f4f4fd;
+  --dark-bg: #2e2f42;
+  /* Button */
+  --bnt-bg: #4d5ae5;
+  --accent-bnt-bg: #404bbf;
+}
+
+/**
+  |============================
+  | Base style
+  |============================
+*/
+
+body {
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
+}
+
+/**
+  |============================
+  | Reset
+  |============================
+*/
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+.list {
+  list-style: none;
+}
+
+/**
+  |============================
+  | Common
+  |============================
+*/
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.header-logo,
+.footer-logo {
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-txt-cl);
+}
+
+/**
+  |============================
+  | Header style
+  |============================
+*/
+
+.header-logo-dark {
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-txt-cl);
+}
+.header-contacts {
+  color: var(--main-txt-cl);
+}
+.header-nav-item:hover,
+.header-nav-item:focus,
+.header-nav-item:hover,
+.header-nav-item:focus {
+  color: var(--accent-txt-cl);
+}
+
+/**
+  |============================
+  | Main style
+  |============================
+*/
+
+/* Hero section */
+.hero-section {
+  background-color: var(--main-txt-cl);
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--light-txt-cl);
+}
+.hero-btn {
+  font-weight: 500;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--light-txt-cl);
+  background-color: var(--bnt-bg);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  background-color: var(--accent-bnt-bg);
+}
+
+/* Features section */
+.features-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.features-desc {
+  color: var(--desc-txt-cl);
+}
+
+/* Team section */
+.team-section {
+  background-color: var(--light-bg);
+}
+.team-prs {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.team-prs-info {
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--desc-txt-cl);
+}
+
+/**
+  |============================
+  | Footer style
+  |============================
+*/
+
+.footer {
+  background-color: var(--dark-bg);
+}
+.footer-desc {
+  color: var(--light-bg);
+}
+.footer-logo-light {
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-bg);
+}
