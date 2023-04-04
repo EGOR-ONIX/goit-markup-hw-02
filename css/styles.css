@@ -253,5 +253,5 @@ body {
   color: var(--title-txt-cl);
 }
 .portfolio-cards-category {
-  color: currentColor;
+  color: var(--body-txt-cl);
 }
