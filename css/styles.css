@@ -41,8 +41,6 @@
 body {
   font-family: var(--main-font);
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--body-txt-cl);
   background-color: var(--bg);
 }
@@ -55,7 +53,6 @@ body {
 
 .link {
   text-decoration: none;
-  font-style: normal;
 }
 .list {
   list-style: none;
@@ -71,8 +68,8 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
   letter-spacing: 0.02em;
+  text-align: center;
   text-transform: capitalize;
   color: var(--title-txt-cl);
 }
@@ -95,22 +92,18 @@ body {
 */
 
 .header-logo-dark {
-  font-family: var(--secondary-font);
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--title-txt-cl);
 }
 .header-contacts {
-  text-transform: lowercase;
-  text-decoration: none;
   font-style: normal;
-  color: currentColor;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--body-txt-cl);
 }
 .header-nav-item {
   font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--title-txt-cl);
 }
 .header-nav-item:hover,
@@ -137,8 +130,8 @@ body {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
+  text-align: center;
   color: var(--light-txt-cl);
 }
 .hero-btn {
@@ -146,7 +139,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  align-items: center;
   letter-spacing: 0.04em;
   color: var(--light-txt-cl);
   background-color: var(--bnt-bg);
@@ -168,6 +160,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-txt-cl);
 }
+.features-desc {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
 
 /* Team section */
 .team-section {
@@ -180,13 +176,14 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  text-align: center;
   letter-spacing: 0.02em;
+  text-align: center;
   color: var(--title-txt-cl);
 }
 .team-prs-info {
-  text-align: center;
+  line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 /**
@@ -199,16 +196,11 @@ body {
   background-color: var(--dark-bg);
 }
 .footer-desc {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--light-bg);
 }
 .footer-logo-light {
-  font-family: var(--secondary-font);
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--light-bg);
 }
 
@@ -224,9 +216,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.04em;
+  text-align: center;
   color: var(--filters-bnt-txt-cl);
   background-color: var(--filters-bnt-bg);
   border: 1px solid var(--border-bnt);
@@ -253,5 +244,7 @@ body {
   color: var(--title-txt-cl);
 }
 .portfolio-cards-category {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--body-txt-cl);
 }
