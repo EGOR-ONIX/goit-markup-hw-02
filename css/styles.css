@@ -245,7 +245,7 @@ body {
   background-color: var(--bg);
   border: 1px solid var(--border-cards);
 }
-.portfolio-cards-info {
+.portfolio-cards-desc {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
