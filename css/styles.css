@@ -1,10 +1,10 @@
 :root {
+  --brand-cl: #4d5ae5;
+  --accent-cl: #404bbf;
+
   /* FONTS */
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
-
-  --brand-cl: #4d5ae5;
-  --accent-cl: #404bbf;
 
   /* TXT COLORS */
   --body-txt-cl: #434455;
@@ -14,12 +14,6 @@
   /* BG COLORS */
   --light-bg: #f4f4fd;
   --dark-bg: #2e2f42;
-
-  /* BUTTON */
-  --border-bnt: #e7e9fc;
-
-  /* CARDS */
-  --border-cards-bg: #e7e9fc;
 }
 
 /**
