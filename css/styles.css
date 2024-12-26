@@ -164,13 +164,13 @@ body {
   background-color: var(--light-bg);
 }
 
-.team-list-item {
+.team-item {
   --light-bg: #ffffff;
 
   background-color: var(--light-bg);
 }
 
-.team-prs-name {
+.team-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -179,7 +179,7 @@ body {
   color: var(--title-txt-cl);
 }
 
-.team-prs-position {
+.team-position {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
@@ -236,13 +236,13 @@ body {
   background-color: var(--accent-cl);
 }
 
-.portfolio-list-item {
+.portfolio-item {
   --light-bg: #ffffff;
 
   background-color: var(--light-bg);
 }
 
-.portfolio-cards-desc {
+.portfolio-card-desc {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -250,7 +250,7 @@ body {
   color: var(--title-txt-cl);
 }
 
-.portfolio-cards-category {
+.portfolio-card-category {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--body-txt-cl);
