@@ -1,40 +1,47 @@
 :root {
+  /* COLORS */
   --brand-cl: #4d5ae5;
   --accent-cl: #404bbf;
 
   /* FONTS */
-  --main-font: "Roboto", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
+  --primary-font: 'Roboto', sans-serif;
+  --additional-font: 'Raleway', sans-serif;
 
   /* TXT COLORS */
-  --body-txt-cl: #434455;
-  --title-txt-cl: #2e2f42;
-  --light-txt-cl: #ffffff;
+  --primary-dark-txt-cl: #434455;
+  --additional-dark-txt-cl: #2e2f42;
+  --primary-light-txt-cl: #ffffff;
+  --additional-light-txt-cl: #f4f4fd;
 
   /* BG COLORS */
-  --light-bg: #f4f4fd;
-  --dark-bg: #2e2f42;
+  --dark-bg-cl: #2e2f42;
+  --light-bg-cl: #f4f4fd;
+  --card-bg-cl: #ffffff;
 }
 
 /**
   |============================
-  | Base style
+  | BASE STYLE
   |============================
 */
 
 body {
-  font-family: var(--main-font);
-  font-size: 16px;
-  color: var(--body-txt-cl);
+  font-family: var(--primary-font);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-dark-txt-cl);
+
+  background-color: #ffffff;
 }
 
 /**
   |============================
-  | Reset
+  | RESET
   |============================
 */
 
 .link {
+  color: currentColor;
   text-decoration: none;
 }
 
@@ -44,22 +51,24 @@ body {
 
 /**
   |============================
-  | Common
+  | COMMON STYLES
   |============================
 */
+
+/* SECTION */
 
 .section-title {
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
-  color: var(--title-txt-cl);
+  color: var(--additional-dark-txt-cl);
 }
 
-.header-logo,
-.footer-logo {
-  font-family: var(--secondary-font);
+/* LOGO */
+
+.logo {
+  font-family: var(--additional-font);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -68,190 +77,159 @@ body {
   color: var(--brand-cl);
 }
 
-/**
-  |============================
-  | Header style
-  |============================
-*/
-
-.header-logo-dark {
-  color: var(--title-txt-cl);
+.logo-dark {
+  color: var(--additional-dark-txt-cl);
 }
 
-.header-nav-link {
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--title-txt-cl);
+.logo-light {
+  color: var(--additional-light-txt-cl);
 }
 
-.header-address {
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--body-txt-cl);
-}
+/* BUTTON */
 
-.header-address-link {
-  color: currentColor;
-}
-
-.header-nav-link:hover,
-.header-nav-link:focus,
-.header-address-link:hover,
-.header-address-link:focus {
-  color: var(--accent-cl);
-}
-
-/**
-  |============================
-  | MAIN PAGE
-  |============================
-*/
-
-/* Hero section */
-
-.hero-section {
-  background-color: var(--dark-bg);
-}
-
-.hero-title {
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: var(--light-txt-cl);
-}
-
-.hero-btn {
+.btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--light-txt-cl);
+  color: currentColor;
 
   background-color: var(--brand-cl);
 
   cursor: pointer;
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
-  color: var(--light-txt-cl);
-
+.btn:hover,
+.btn:focus {
   background-color: var(--accent-cl);
 }
 
-/* Features section */
+/**
+  |============================
+  | HEADER STYLES
+  |============================
+*/
 
-.features-title {
+.header-nav-link {
+  font-weight: 500;
+  color: var(--additional-dark-txt-cl);
+}
+
+.header-address {
+  font-style: normal;
+}
+
+.header-address-link {
+  color: var(--primary-dark-txt-cl);
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-address-link:hover,
+.header-address-link:focus,
+.current-page {
+  color: var(--accent-cl);
+}
+
+/**
+  |============================
+  | MAIN STYLES
+  |============================
+*/
+
+/* HERO SECTION */
+
+.hero-section {
+  background-color: var(--dark-bg-cl);
+}
+
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  color: var(--primary-light-txt-cl);
+}
+
+.hero-btn {
+  color: var(--primary-light-txt-cl);
+}
+
+/*! .hero-btn:hover,.hero-btn:focus {} */
+
+/* FEATURES SECTION */
+
+.feature-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--title-txt-cl);
+  color: var(--additional-dark-txt-cl);
 }
 
-.features-desc {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
+/* ! .feature-desc {} */
 
-/* Team section */
+/* TEAM SECTION */
 
 .team-section {
-  background-color: var(--light-bg);
+  background-color: var(--light-bg-cl);
 }
 
 .team-item {
-  --light-bg: #ffffff;
-
-  background-color: var(--light-bg);
+  background-color: var(--card-bg-cl);
 }
 
-.team-title {
+.team-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
   text-align: center;
-  color: var(--title-txt-cl);
+  color: var(--additional-dark-txt-cl);
 }
 
 .team-position {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   text-align: center;
 }
 
-/**
-  |============================
-  | Footer style
-  |============================
-*/
+/* PORTFOLIO SECTION - PORTFOLIO PAGE */
 
-.footer {
-  background-color: var(--dark-bg);
-}
-
-.footer-desc {
-  --light-txt-cl: #f4f4fd;
-
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--light-txt-cl);
-}
-
-.footer-logo-light {
-  --light-txt-cl: #f4f4fd;
-
-  color: var(--light-txt-cl);
-}
-
-/**
-  |============================
-  | PORTFOLIO PAGE
-  |============================
-*/
-
-.filters-btn {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  text-align: center;
+.filter-btn {
   color: var(--brand-cl);
 
-  background-color: var(--light-bg);
-
-  cursor: pointer;
+  background-color: var(--light-bg-cl);
 }
 
-.filters-btn:hover,
-.filters-btn:focus {
-  color: var(--light-txt-cl);
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--primary-light-txt-cl);
 
   background-color: var(--accent-cl);
 }
 
 .portfolio-item {
-  --light-bg: #ffffff;
-
-  background-color: var(--light-bg);
+  background-color: var(--card-bg-cl);
 }
 
-.portfolio-card-desc {
+.portfolio-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--title-txt-cl);
+  color: var(--additional-dark-txt-cl);
 }
 
-.portfolio-card-category {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--body-txt-cl);
+.portfolio-category {
+  color: var(--primary-dark-txt-cl);
+}
+
+/**
+  |============================
+  | FOOTER STYLES
+  |============================
+*/
+
+.footer {
+  background-color: var(--dark-bg-cl);
+}
+
+.footer-desc {
+  color: var(--additional-light-txt-cl);
 }
